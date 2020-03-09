@@ -3,6 +3,8 @@ var Dice = (function() {
     "history": []
   };
 
+  var dice = new dice [];
+
   entity.roll = function() {
     var nextValue = Math.floor(1 + Math.random() * 6);
     this.history.push(nextValue);
@@ -29,6 +31,7 @@ var Dice = (function() {
   function htmlDie(num) {
     var html = '<div class="dice" />';
     var pos = positions(num);
+    dice = new dice 
     for (var i = 0, len = pos.length; i < len; i++) {
       html += htmlDot(pos[i]);
     }    
